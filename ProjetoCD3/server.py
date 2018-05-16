@@ -28,6 +28,6 @@ class Server:
             client_connection, client_address = self.server_socket.accept()
             # Handle client connection
             thread = ClientConnection(client_connection)
-            thread.run()
+            thread.start()
         # Close socket
         server_socket.close()
