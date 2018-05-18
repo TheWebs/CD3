@@ -66,7 +66,6 @@ class ClientConnection(Thread):
         if parsed_request["method"] not in ["GET", "HEAD", "POST"]:
             response.set_bad_request()
             return response.to_string()
-        # TODO: VERIFICAR SE É UM POST
         if parsed_request["filename"] == '/':
             parsed_request["filename"] = '/index.html'
         if "private" in parsed_request["filename"].split("/"):

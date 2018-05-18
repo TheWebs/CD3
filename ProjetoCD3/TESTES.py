@@ -22,7 +22,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Connect to server
 client_socket.connect((SERVER_HOST, SERVER_PORT))
 
-client_socket.sendall("POST / HTTP/1.1\n\nolaeucurt&&&ogaitas".encode())
+client_socket.sendall("etrhdrhtrth / HTTP/1.1".encode())
 res = client_socket.recv(1024).decode()
 print(res)
 
